@@ -1,0 +1,103 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    background-color: #56DDD2;
+}
+.navbar{
+    display: flex;
+    flex-flow: row;
+    background-color: #006666;
+    padding: 1em;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav_list li{
+    display: inline-block;
+    padding-left: 4em;    
+    text-align: right;
+    font-size: 1.2em;
+}
+.nav_name{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.main_container{
+    background-color: #56DDD2;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    flex: 1;
+}
+.main_image{
+    height: 200px;
+    width: 200px;
+}
+.main_desc{
+    text-align: center;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+}
+.main_name{
+    font-size: 60px;
+}
+.left_container{
+    width: 50%;
+    margin-left: 50px;
+    font-size: 40px;
+}
+.right_container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.main_desc ul{
+    line-height: 2;
+}
+h4{ 
+    font: 50px;
+}
+@media screen and (max-width: 1200px){
+    .right_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav_list li{          
+    padding-left: 2em;    
+    font-size: 1.3em;
+}
+    
+}
+@media screen and (max-width: 1049px){
+    .right_container{
+    display: flex;
+    justify-content: flex-end;
+}
+    .nav_list li{
+        font-size: 1em;
+       
+    }
+    .nav_name{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 841px){
+    .right_container{
+        display: none;
+    }
+    .main_name{
+        font-size: 40px;
+    }
+    .main_image{
+        height: 150px;
+        width: 150px;
+    }
+    .main_desc{
+        font-size: 20px ;
+        
+    }
+}
